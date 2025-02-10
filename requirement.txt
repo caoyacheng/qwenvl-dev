@@ -2,3 +2,5 @@ openai
 python-dotenv
 opencv-python
 flask
+fpdf
+requests

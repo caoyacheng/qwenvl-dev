@@ -68,7 +68,8 @@ def analyze_image_with_qwenvl(image):
 
 # 将响应保存到带有时间戳的文本文件中
 def save_response_to_file(response):
-    filename = "qwen_responses.txt"
+    current_date = time.strftime("%Y%m%d")  # 当前日期，格式为 YYYYMMDD
+    filename = f"response_{current_date}.txt"
     with open(filename, "a", encoding="utf-8") as file:
         file.write(f"{response}\n\n")
     print(f"Response saved to {filename}")
